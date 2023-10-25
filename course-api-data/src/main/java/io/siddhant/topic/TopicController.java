@@ -17,12 +17,6 @@ public class TopicController {
 	@RequestMapping("/topics")
 	public List<Topic> getAllTopics()
 	{
-		
-		List<Topic> topics = new ArrayList<>();
-		topics.add(new Topic("123","sid", "infa"));
-		topics.add(new Topic("124","mithun", "infa"));
-		topics.add(new Topic("125","rajan", "infa"));
-		
 		return topicService.getAllTopics();
 	}
 	
